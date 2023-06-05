@@ -1,0 +1,112 @@
+{% extends 'shop/layouts/main.html' %}
+{% load static %}
+
+{% block title %}
+Index | SMART TIMES
+{% endblock title %}
+{% block contant  %}
+<style>
+  *{
+   
+    margin: 0%;
+    padding: 0%;
+  }
+  body{
+    background-color:whitesmoke;
+  }
+</style>
+
+<section class="bg-light py-4 my-5">
+  <div class="container " id="procon">
+    <div class="row">
+      <div class="col-12 ">
+        <h3 id="pro"> {{product.name}} </h3>
+        <hr style="height: 5px; color: black;" >
+      </div>
+      <div class="containerbox col-12" id="prodetcon" style=" display: flex; justify-content: space-between; box-shadow: 15px 20px 20px rgba(23, 164, 207, 0.3);border-radius: 15px; " >
+        <div class="col-4 my-3" id="bigimg" >
+            <img src="{{product.product_img.url}}" class="card-img-top bigimg"   style=" height: 300px; width: 350px;border-radius: 15px;">
+        </div>
+          <div class="col-8 my-3 mx-5" id="details" >
+            <h5 style="color: orangered;"><strong>{{product.name}}</strong></h5>
+            <p > <strong>VENDER :</strong> {{product.vender}}</p>
+            <p><strong>QUANTITY :</strong> {{product.quantity}}</p>
+            <span><strong>PRODUCT DETAILS </strong></span> 
+            <p class="my-2"> {{product.discription}}</p>
+            <p class="my-3"><s class="text-danger"> &#8377;.{{product.original_price | stringformat:'d'}}</s>
+            <span class="" style="border-radius: 3px; background-color: blue; color: aliceblue; padding: 3px;" >MRP. &#8377; {{product.selling_price | stringformat:'d'}}</span> 
+            </p>
+            <div class="col-8">
+              <button  class="btn buy "  style=" color: white; background-color: orangered;border-radius: 7px;"><i class="fa fa-cart"></i>BUY NOW</button>
+            </div>
+          </div>
+      </div>
+      
+      <div>
+        <h1 style="margin-top: 40px;">Related products</h1>
+        <hr>
+      </div>
+      
+
+      <div class="card col-lg-3 col-md-4  " id="col"  >
+        <div class="card my-2" style="border: none;">
+          <img src="{% static 'images/related/realme 3.jpg' %}" class="card-img-top " >
+        </div>
+        <div class="card-body"  >
+          <h5 class="card-title">REALME 3</h5>
+          <p class="card-text"><span class="float-end " id="mrp">MRP. &#8377; 5600</span>
+            <span class="flot-start "><s> &#8377; 7000 </span></s> 
+          </p>
+          <a href="http://127.0.0.1:8000/products/Realme%20watch%203 " class="btn btn-primary" style="margin-top: 5px;" >Buy now</a>
+        </div>
+      </div>
+
+      
+      <div class="card col-lg-3 col-md-4  " id="col"  >
+        <div class="card my-2" style="border: none;">
+          <img src="{% static 'images/related/sam 5.jpg' %}" class="card-img-top " >
+        </div>
+        <div class="card-body"  >
+          <h5 class="card-title">Samsung galaxy 5</h5>
+          <p class="card-text"><span class="float-end " id="mrp">MRP. &#8377; 51450</span>
+            <span class="flot-start "><s> &#8377; 56000 </span></s> 
+          </p>
+          <a href="{% url 'products'  %}" class="btn btn-primary" style="margin-top: 5px;" >Buy now</a>
+        </div>
+      </div>
+
+      
+      <div class="card col-lg-3 col-md-4  " id="col"  >
+        <div class="card my-2" style="border: none;">
+          <img src="{% static 'images/related/HUAWEI BAND 4.jpg' %}" class="card-img-top " >
+        </div>
+        <div class="card-body"  >
+          <h5 class="card-title">HUAWEI band 4</h5>
+          <p class="card-text"><span class="float-end " id="mrp">MRP. &#8377; 21450</span>
+            <span class="flot-start "><s> &#8377; 25000 </span></s> 
+          </p>
+          <a href="{% url 'products'  %}" class="btn btn-primary" style="margin-top: 5px;" >Buy now</a>
+        </div>
+      </div>
+
+      
+      <div class="card col-lg-3 col-md-4  " id="col"  >
+        <div class="card my-2" style="border: none;">
+          <img src="{% static 'images/related/movado connect.jpg' %}" class="card-img-top " >
+        </div>
+        <div class="card-body"  >
+          <h5 class="card-title">MAVADO connect</h5>
+          <p class="card-text"><span class="float-end " id="mrp">MRP. &#8377; 58000</span>
+            <span class="flot-start "><s> &#8377; 67000 </span></s> 
+          </p>
+          <a href="{% url 'products'  %}" class="btn btn-primary" style="margin-top: 5px;" >Buy now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock contant %}
+{% block footer %}
+{% include 'shop/inc/footer.html' %}
+{% endblock footer %}

@@ -1,0 +1,29 @@
+{% extends 'shop/layouts/main.html' %}
+{% load static %}
+
+{% block title %}
+Index | SMART TIMES
+{% endblock title %}
+{% block contant %}
+<section  >
+<div class="container1">
+    <div class="left anim">
+        <h1>Future<br>on your Hand</h1>
+        <h3>Make your time good with us<br> Our best collections for you
+        </h3>
+        <a href="{% url 'home' %}" >Order now</a>
+    </div>
+    <div class="right anim">
+        <img src="{% static 'images/wat3.png' %}" alt="">
+        
+    </div>
+</div>
+<div class="bottomlogo anim" id="blogo">
+    <img src="{% static 'images/applelogo.png' %}" alt="">
+    <img src="{% static 'images/samsunglogo.png' %}" alt="">
+    <img src="{% static 'images/movadologo.jpg' %}" alt="">
+    <img src="{% static 'images/Huaweilogo1.jpg' %}" alt="">
+</div>
+</section>
+{% endblock contant %}
+    

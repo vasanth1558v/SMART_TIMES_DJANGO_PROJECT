@@ -1,0 +1,55 @@
+{% extends 'shop/layouts/main.html' %}
+{% load static %}
+
+{% block title %}
+Index | SMART TIMES
+{% endblock title %}
+{% block contant  %}
+<style>
+  *{
+   
+    margin: 0%;
+    padding: 0%;
+  }
+  body{
+    background-color:whitesmoke;
+  }
+</style>
+{% include 'shop/inc/slider.html' %}
+<section class="bg-light py-4 my-5">
+  <div class="container ">
+    <div class="row">
+      <div class="col-12 ">
+        <h3 id="pro">Products</h3>
+        <hr style="height: 5px; color: black;" >
+      </div>
+  
+ 
+{% for item in product %}
+
+  <div class="card col-lg-3 col-md-4" id="col"  >
+    <div class="card my-2" style="border: none;">
+      <img src="{{item.product_img.url}}" class="card-img-top " >
+    </div>
+    <div class="card-body"  >
+      <h5 class="card-title">{{item.name}}</h5>
+      <p class="card-text" ><span class="float-end " id="mrp">MRP. &#8377; {{item.selling_price | stringformat:'d'}}</span>
+        <span class="flot-start " ><s> &#8377;.{{item.original_price | stringformat:'d'}} </span></s> 
+      </p>
+      <a href="{% url 'products_details' item.name %}" class="btn btn-primary" style="margin-top: 5px;" >Buy now</a>
+    </div>
+  </div>
+
+  {% endfor %}
+</div>
+</div>
+</section>
+
+
+
+      
+
+{% endblock contant %}
+{% block footer %}
+{% include 'shop/inc/footer.html' %}
+{% endblock footer %}

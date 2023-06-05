@@ -1,0 +1,34 @@
+{% load static %}
+<nav class="navbar navbar-expand-sm " id="nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'index' %}" ><img src="{% static 'images/icon2.jpg' %}" id="icon">SMART TIMES</a>
+      <button id="nav-btn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class=" navbar-toggler-icon " style="color: #fff; margin-right: 25px;">MENU</span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav ms-auto" id="rv" >
+          <li class="nav-item">
+            <a class="nav-link" href="home" >Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#fea" >Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'products' %}">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="" >Login</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search">
+          <button class="btn btn-danger" type="button" id="btn" >Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+  
+  

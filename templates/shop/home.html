@@ -1,0 +1,142 @@
+{% extends 'shop/layouts/main.html' %}
+{% load static %}
+
+{% block title %}
+Index | SMART TIMES
+{% endblock title %}
+{% block contant %}
+<style>
+  body{
+    background-color:whitesmoke;
+  }
+</style>
+{% include 'shop/inc/slider.html' %}
+  </div>
+</div>
+<h1 class="my-3"><center>SMART TIMES to buy a quality brand watches </center> </h1>
+</section>
+<div class="container2 ">
+  <div class=" left1 mx-5">
+  <h1 class="scroll" >
+      Our smart watch <br> Excellent of Future
+  </h1 >
+  <h3 class="scroll">Apple watch series</h3>
+  </div>
+  <div class="right1  ">
+    <a href="{% url 'products' %}">
+      <img class="scrollimg" src="{% static 'images/poster2.jpg' %}" >
+    </a>
+      
+  </div>
+</div>
+<section class="quality ">
+  <div class="row my-5 quality" id="row" style="margin-left: 55px;">
+      <div class="col-md-3 quality2">
+        <img src="{% static 'images/qual3.png' %}" >
+        <p><h4>Always-On Retina display</h4>Upto 1,000 nits </p>
+      </div>
+      <div class="col-md-3 quality2 ">
+        <img src="{% static 'images/qual1.png' %}">
+        <p><h4>Tougher than tough</h4>Resistant to cracking</p>
+      </div>
+      <div class="col-md-3 quality2">
+        <img src="{% static 'images/qual2.png' %}">
+        <p ><h4>Healthy backup</h4>Long battery backup</p>
+      </div>
+      <div class="col-md-3 quality2" >
+        <img src="{% static 'images/qual4.png' %}">
+        <p><h4>Flexible strips</h4>Quality assurance</p>
+      </div> 
+  </div>
+</section>
+
+<section>
+  <div class="container3">
+    <h1>HUAWEI TIMES</h1>
+  </div>
+</section>
+<section>
+  <div class="container4" id="fea">
+    <div class="left2 scroll">
+      <a href="{% url 'products' %}">
+        <img  src="{% static 'images/applewat2.jpg' %}" alt="">
+      </a>
+    </div>
+      <div class="right2 scroll1">
+        <h3>THE ULTIMATE DEVICE <br> FEATURES</h3>
+        <li>
+          Apple Watch Ultra. Adventure awaits
+        </li>
+        <li>
+          Move. Exercise. Stand. Track all the ways you’re active
+        </li>
+        <li>Go all out with the enhanced Workout app</li>
+        <li>Available on Series 8 and Ultra
+          Blood oxygen. Key to your wellness</li>
+        <li>ECG on your wrist. Anytime, anywhere</li>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container4" >
+    <div class="right2 scroll">
+      <h3>HEART BEAT INDICATER</h3>
+      <li>
+        It has your heart in mind.
+        Unusually high or low heart rates and irregular heart rhythms (known as arrhythmias) could be signs of a serious condition.3 But many people don't recognise the symptoms, so the underlying causes often go undiagnosed. Notifications in the Heart Rate app will alert you to these irregularities so you can take action and consult your doctor.
+      </li>
+    </div>
+    <div class="left2 scroll1">
+      <a href="{% url 'products' %}">
+        <img src="{% static 'images/applewat3.png' %}" alt="">
+      </a>
+    </div>
+  </div>
+</section>
+<div class="my-5 scrollimg" >
+  <img class="col-lg-12 col-md-12 col-12 " src="{% static 'images/adbanner.png' %}" style="height: 40vh; ">
+</div>
+
+<div class="mb-4 bigwatch scrollimg">
+  <h4><center>We take responsibility for the environmental footprint of our products throughout their life cycle. We’re committed to one day sourcing 100% recycled and renewable materials across all of our products and packaging. Apple Watch is designed with a list of features to reduce environmental impact</center></h4>
+</div>
+<div class="scroll" style="background-color: rgba(2, 2, 2, 0.658);">
+  <hr>
+<h1 style="color: aliceblue;"><center>PATNERS IN HAND</center></h1>
+<hr>
+</div>
+
+<div class="bottomlogo anim" style="margin: 50px 70px; justify-content: space-evenly;">
+ 
+  <img src="{% static 'images/applelogo1.png' %}" alt="">
+  <img src="{% static 'images/samsunglogo1.png' %}" alt="">
+  <img src="{% static 'images/movadologo1.png' %}" alt="">
+  <img src="{% static 'images/Huaweilogo.jpg' %}" alt="">
+</div>
+
+<footer>
+  {% include 'shop/inc/footer.html' %}
+</footer>
+
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+        <script >
+            ScrollReveal({
+                reset: true,
+                distance: '60px',
+                duration: 800,     
+                delay: 400
+            });
+
+                ScrollReveal().reveal('.scroll ', { delay: 200, origin: 'left'});
+                ScrollReveal().reveal('.scrollimg', { delay: 500, origin: 'bottom'});
+                ScrollReveal().reveal('.quality2', { delay: 500, origin: 'bottom', Interval: 200});
+                ScrollReveal().reveal('.container3 ', { delay: 500, origin: 'bottom'});
+                ScrollReveal().reveal('.scroll1 ', { delay: 200, origin: 'right'});
+
+        </script>
+
+
+{% endblock contant %}
