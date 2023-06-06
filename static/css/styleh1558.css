@@ -249,7 +249,7 @@ body{
 .footerlink{
     margin-left: 200px ;
 }
-@media only screen and (max-width:850px){
+@media only screen and (max-width:768px){
     .left1 {
         position: absolute;
        
