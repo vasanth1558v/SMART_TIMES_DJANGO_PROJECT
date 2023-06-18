@@ -1,0 +1,36 @@
+{% extends 'shop/layouts/main.html' %}
+{% load static %}
+
+{% block title %}
+Index | SMART TIMES | buy
+{% endblock title %}
+{% block contant  %}
+<style>
+    *{
+      margin: 0%;
+      padding: 0%;
+    }
+    body{
+      background-color:#fff;
+    }
+    .lastbuy{
+        display:grid;
+        justify-content: center;
+        align-items: center;
+       
+    }
+</style>
+
+  <div class="lastbuy">
+     <div>
+        <img src="{% static 'images/delivery.png' %}" alt="">
+     </div>
+     <h3><strong>THANK YOU FOR BUYING</strong></h3>
+     <h4>Your order will arrived soon to your destination</h4>
+   
+     
+  </div>
+{% endblock contant %}
+{% block footer %}
+{% include 'shop/inc/footer.html' %}
+{% endblock footer %}

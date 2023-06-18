@@ -251,72 +251,184 @@ body , html{
 .footerlink{
     margin-left: 200px ;
 }
-@media only screen and (max-width:768px){
-    .left1 {
-        position: absolute;
-       
+@media only screen and (max-width:740px)  {
+    body , html{
+        overflow-x: hidden;
     }
-    .left1 h1{
-        font-size: 45px;
-        margin-top: 800px;
+    body{
+        position: relative;
+    }
+    .smarttimes{
+        font-size: 25px;
+    }
+    .anim h1{
+        position: relative;
+        width: 250%;
+        bottom: 50px;
+        right: 25px;
+        font-size: 50px;
+        line-height: 3.4rem;   
+    }
+    .anim h3{
+        position: relative;
+        right: 25px;
+        
+    }
+    .right img{
+        position: relative;
+        right: 55px;
+        height: 150px;
+        width: 250px;
+    }
+    .left a{
+        position: relative;
+        right: 25px;
+        top: 20px;
+    }
+    /*home*/
+
+    .left1 {
+        position: absolute;  
+    }
+    .right1 img{
+        width: 330%;
+    }.left1 h1{
+        font-size: 33px;
+        margin-top: 840px;
+        margin-left: 3px;
     }
     .quality{
         margin-top: 200px;
         
         display: flex;
         justify-content: center;
-        align-items: center;   
+        align-items: flex-start;      
     }
     .quality2 h4{
         font-size: 25px;
     }
     .container3{
         height: 180px;
-        width: 500px;
+        width: 440px;
     }
     .container4{
         margin-top: 25px;
+        align-items: self-start;
+        justify-content: flex-start;
     }
     .container4 img{
         height: 300px;
         width: 250px;
+        
+    }
+    #fea{
+        height: 600px;
     }
     .right2 h3{
-        font-size: 2em;
+        font-size: 1.5rem;
+        width: 100px;
+        position: relative;
+        right: 11px; 
     }
+    .scroll99 {
+        position: absolute;
+        right: 45px;    
+    }
+    .scroll97 {
+        position: absolute;
+        right: 1px;
+        top: 2830px;
+        width: 100%;
+    }
+    .scroll98 {
+        position: absolute;
+        right: 1px;
+        top: 2880px;
+        width: 100%;
+    }
+    .scroll96 {
+        position: absolute;
+        right: 70px;
+        top: 2955px;
+    }
+    .left2con{
+        width: 230px;
+    }
+    .heart{
+        position: relative;
+        left: 1px;
+    }
+    .scroll li{
+        line-height: 1.5rem;
+
+    }
+    
+    .scroll81{
+        position: absolute;
+        top: 3400px;
+        width: 100%;
+
+    }
+    .scroll82{
+        position: absolute;
+        top: 3460px;
+        width: 100%;
+
+    }
+    .scroll83{
+        position: absolute;
+        top: 3540px;
+        width: 100%;
+
+    }
+    .bigwatch1 img{
+        position: relative;
+        margin-top: 185px;
+        
+    }
+  
+   
     .bigwatch h4{
         font-size: 1.1em;
     }
     .bottomlogo img{
-        width: 100px;
+        display: flex;
+        width: 75px;
         height: 35px;
     }
     .slider img{
        height: 250px;
     }
     #col{
-        height: 380px;
-        width: 205px;
+        position: relative;
+        left: 35px;
+        height: 350px;
+        width: 250px;
     }
     #mrp{
        position: absolute;
-       margin-left: 60px;
+       margin-left: 80px;
     }
     #bigimg{
         height: 500px;
     }
-    #bigimg img{
-        margin-left: 45px;  
-    }
     .buy{
-        position: absolute;
-       left:200px;
-       bottom: 14px;
+        position: relative;
+        left:180px;
+        bottom: 14px;
     }
    
     #details{
         position: absolute;
         top: 570px;
+    }
+    #pdmrp{
+       position: relative;
+       top: 35px;
+       right: 35px;
+    }
+    #dis{
+        width: 120%;
     }
     #blogo{
         margin-top: 25px;

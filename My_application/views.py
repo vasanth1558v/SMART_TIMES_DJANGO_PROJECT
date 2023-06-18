@@ -23,4 +23,6 @@ def products_details(request,pname):
     else:
         messages.error(request,"no product found")
         return redirect("products")
-       
+
+def buy(request):
+    return render(request,"shop/layouts/buy.html") 
